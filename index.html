@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Júlia Barros | Portfólio</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="#"><img src="assets/images/Profile.png" alt="Logo"></a>
+        </div>
+    
+        <nav class="header-nav">
+            <a class="active" href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        
+        <a class="btn-default" href="assets/Currículo - Júlia Barros.pdf" target="_blank">Download CV</a>
+    
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    
+    <!-- Menu Mobile -->
+    <div class="mobile-menu">
+        <a href="#about" onclick="closeMenu()">Sobre</a>
+        <a href="#projects" onclick="closeMenu()">Projetos</a>
+        <a href="#contact" onclick="closeMenu()">Contato</a>
+        <a class="btn-default" href="assets/Currículo - Júlia Barros.pdf" target="_blank" onclick="closeMenu()">Download CV</a>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="mobile-menu-overlay" onclick="closeMenu()"></div>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-info">
+                <h1>Júlia Barros<h1>
+                <div class="about-loc">
+                    <i class="ri-map-pin-line"></i>
+                    <p>São Paulo, Brasil</p>
+                </div>
+            </div>
+
+            <div class="about-desc">
+                Olá, me chamo Júlia, uma desenvolvedora iniciante em <span>Front-end</span>. Tenho uma base sólida em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Adoro aprender coisas novas, enfrentar desafios e criar experiências. Estou sempre buscando crescer e aprimorar minhas habilidades, pronta para contribuir com projetos criativos e construir uma carreira promissora na área.
+            </div>
+
+            <div class="about-socials">
+                <a href="https://www.linkedin.com/in/júlia-barros" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/juliabarrosdev" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="mailto:juliabarrosnasc20@gmail.com"<i class="ri-mail-fill"></i></a>
+                <a href="https://wa.me/5511947490126" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="assets/images/project.jpg" alt="">
+                <div class="project-content">
+                    <h3>Site São Paulo FC</h3>
+                    <p>O site do São Paulo FC é responsivo, com design moderno e uso de tecnologias como <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> no front-end, e linguagens como <span>PHP</span> ou <span>Node.js </span>no back-end para gerenciar conteúdos dinâmicos.</p>
+                    <div class="tags">
+                        <a href="https://www.saopaulofc.net/" target="_blank">
+                            <p>Demo</p>
+                        </a>
+                        <a href="https://github.com/juliabarrosdev" target="_blank">
+                            <p>Github</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/images/project.jpg" alt="">
+                <div class="project-content">
+                    <h3>Youtube</h3>
+                    <p>O YouTube utiliza <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> no front-end e tecnologias como <span>Python</span> e <span>C++ </span>no back-end, com algoritmos para personalização e streaming de vídeos.</p>
+                    <div class="tags">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <p>Demo</p>
+                        </a>
+                        <a href="https://github.com/juliabarrosdev" target="_blank">
+                            <p>Github</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/images/project.jpg" alt="">
+                <div class="project-content">
+                    <h3>Twitch</h3>
+                    <p>A Twitch utiliza <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> no front-end, com <span>Python</span> e <span>Java</span> no back-end, para gerenciar transmissões ao vivo, chat e recomendações de conteúdo.</p>
+                    <div class="tags">
+                        <a href="https://twitch.com/" target="_blank">
+                            <p>Demo</p>
+                        </a>
+                        <a href="https://github.com/juliabarrosdev" target="_blank">
+                            <p>Github</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form class="contact-form" action="https://formspree.io/f/mwpkzlyo" method="post">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Ex: Júlia">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(55) 11 90000-0000">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject"
+                placeholder="Escreva aqui o Assunto">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" rows="4" placeholder="Escreva a sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>&copy; 2024 <a href="https://github.com/juliabarrosdev" target="_blank">Júlia Barros</a> - Todos os direitos reservados.</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
