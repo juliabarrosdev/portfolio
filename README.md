@@ -40,10 +40,10 @@ O layout é minimalista e responsivo, garantindo uma navegação intuitiva tanto
 ## 🖼️ Capturas de Tela
 
 ### Versão Desktop
-![Captura Desktop](https://imgur.com/a/lmdiabP)
+(https://imgur.com/a/lmdiabP)
 
 ### Versão Mobile
-![Captura Mobile](https://imgur.com/a/DMqJbm3)
+(https://imgur.com/a/DMqJbm3)
 
 ---
 
