@@ -130,7 +130,7 @@ header {
     color: var(--primary-color);
 }
 
-.mobile-menu.active {
+.mobile-menu.menu-active {
     transform: translateX(0); /* Menu desliza para a tela */
     display: flex; /* Torna o menu visível quando ativado */
 }
@@ -147,7 +147,7 @@ header {
     z-index: 40; /* Fica atrás do menu */
 }
 
-.mobile-menu-overlay.active {
+.mobile-menu-overlay.overlay-active {
     display: block; /* Torna o overlay visível */
 }
 
@@ -286,6 +286,7 @@ header {
     overflow: hidden;
     width: 90%;
     max-width: 600px;
+    height: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
@@ -444,7 +445,11 @@ footer a {
     /* Menu ativo (visível) */
     .mobile-menu.active {
         display: flex;
-    }   
+    } 
+    
+    header {
+        justify-content: space-around;
+    }
     
     header .btn-default {
         display: none;
@@ -460,9 +465,20 @@ footer a {
         flex-direction: column
     }
 
+    .about-socials {
+        justify-content: center;
+    }
+
 
     .project-card {
+        width: 100%;
+        max-width: 400px;
+        height: 350px;
         margin-bottom: 10px;
+    }
+
+    hr {
+        width: 370px;
     }
 
     footer {
